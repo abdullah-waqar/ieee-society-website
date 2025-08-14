@@ -49,7 +49,7 @@ const Navbar = () => {
       </div>
 
       {/* Hamburger icon for mobile */}
-      <div className='md:hidden text-3x flex items-center ml-38 text-2xl l cursor-pointer' onClick={() => setIsOpen(!isOpen)}>
+      <div className='md:hidden text-3x flex items-center ml-30 text-2xl l cursor-pointer' onClick={() => setIsOpen(!isOpen)}>
         {isOpen ? <FiX /> : <FiMenu />}
       </div>
 
