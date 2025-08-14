@@ -1,27 +1,5 @@
-// // components/JoinUsSection.jsx
-// export default function JoinUsSection() {
-//   return (
-//     <section className=" py-16 ml-40 mr-40   text-center">
-//       <h2 className="text-3xl font-bold text-black mb-4">Why Join IEEE?</h2>
-      
-//       <div>
-//         <div className="flex justify-between">
-//             <img className="w-[35rem]" src="https://img.freepik.com/free-vector/forensic-expert-concept-illustration_114360-15986.jpg?t=st=1751916642~exp=1751920242~hmac=612e9145d21e54565bc4d7fa2fffc3fd6995f17728f88b001fe7200bef907877&w=1380" alt="" />
-//             <p className="m-auto w-[20rem]  text-[1.5rem]">Enhance your technical skills through hands-on workshops, coding sessions, and real-world projects.</p>
-//         </div>
+import { motion } from 'framer-motion';
 
-//          <div className="flex justify-between">
-//             <p className="m-auto w-[20rem]  text-[1.5rem]">Network with professionals and peers at IEEE events, tech talks, and conferences.</p>
-//             <img className="w-[35rem]" src="https://img.freepik.com/premium-vector/medical-laboratory-results-analyzes-tests-doctor-s-consultation-online-vector-illustration_143808-1023.jpg?w=1380" alt="" />
-//         </div>
-//       </div>
-     
-//     </section>
-//   );
-// }
-
-
-// components/JoinUsSection.jsx
 export default function JoinUsSection() {
   return (
     <section className="py-16 px-4 sm:px-10 lg:ml-40 lg:mr-40 text-center">
@@ -29,28 +7,60 @@ export default function JoinUsSection() {
       
       <div className="flex flex-col gap-12">
         {/* First Row */}
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
-          <img 
+        <motion.div
+          className="flex flex-col lg:flex-row items-center justify-between gap-6"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.8 }}
+        >
+          <motion.img 
             className="w-full max-w-lg rounded-lg" 
             src="https://img.freepik.com/free-vector/forensic-expert-concept-illustration_114360-15986.jpg?t=st=1751916642~exp=1751920242~hmac=612e9145d21e54565bc4d7fa2fffc3fd6995f17728f88b001fe7200bef907877&w=1380" 
             alt="" 
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
           />
-          <p className="w-full lg:w-[20rem] text-lg leading-relaxed">
+          <motion.p
+            className="w-full lg:w-[20rem] text-lg leading-relaxed"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
             Enhance your technical skills through hands-on workshops, coding sessions, and real-world projects.
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
 
         {/* Second Row */}
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
-          <p className="w-full lg:w-[20rem] text-lg leading-relaxed">
+        <motion.div
+          className="flex flex-col lg:flex-row items-center justify-between gap-6"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
+          <motion.p
+            className="w-full lg:w-[20rem] text-lg leading-relaxed"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
             Network with professionals and peers at IEEE events, tech talks, and conferences.
-          </p>
-          <img 
+          </motion.p>
+          <motion.img 
             className="w-full max-w-lg rounded-lg" 
             src="https://img.freepik.com/premium-vector/medical-laboratory-results-analyzes-tests-doctor-s-consultation-online-vector-illustration_143808-1023.jpg?w=1380" 
             alt="" 
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

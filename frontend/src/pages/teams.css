@@ -1,0 +1,41 @@
+/* Existing desktop styles remain as is */
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .teams-banner {
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px;
+    text-align: center;
+  }
+
+  .teams-banner img {
+    width: 100%;
+    height: auto;
+  }
+
+  .teams-banner h1 {
+    font-size: 1.5rem; /* Smaller heading */
+    line-height: 1.2;
+  }
+
+  .teams-banner p {
+    font-size: 0.9rem; /* Smaller paragraph text */
+    line-height: 1.4;
+  }
+
+  .teams-banner button {
+    font-size: 0.85rem;
+    padding: 8px 14px;
+  }
+}
+
+/* For very small devices like phones */
+@media (max-width: 480px) {
+  .teams-banner h1 {
+    font-size: 1.2rem;
+  }
+
+  .teams-banner p {
+    font-size: 0.8rem;
+  }
+}
