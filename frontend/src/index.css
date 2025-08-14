@@ -1,1 +1,21 @@
 @import "tailwindcss";
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+} */
+
+/* @import "tailwindcss"; */
+ /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}  */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+/* Apply Nunito globally */
+body {
+  font-family: 'Nunito', sans-serif;
+}
