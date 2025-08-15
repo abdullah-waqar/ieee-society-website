@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Sphere, MeshDistortMaterial } from '@react-three/drei';
+import heroImg from '../assets/hero-img.jpeg'
 
 const HeroSection = () => {
   const [showModal, setShowModal] = useState(false);
@@ -59,8 +60,9 @@ const HeroSection = () => {
         {/* Image */}
         <motion.img
           className="w-full max-w-md lg:max-w-lg rounded-br-2xl rounded-tl-2xl shadow-xl cursor-pointer"
-          src="https://img.freepik.com/free-vector/employee-celebration-concept-illustration_114360-14531.jpg"
+          //src="https://img.freepik.com/free-vector/employee-celebration-concept-illustration_114360-14531.jpg"
           alt="IEEE Society"
+          src={heroImg}
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1 }}

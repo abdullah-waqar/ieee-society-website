@@ -51,6 +51,7 @@ import { FaLightbulb, FaHandsHelping, FaLaptopCode } from 'react-icons/fa';
 import Footer from '../sections/Footer';
 import GallerySection from '../sections/GallerySection';
 import { motion } from 'framer-motion';
+import heroImg from '../assets/hero-img.jpeg'
 
 const ValueItem = ({ icon: Icon, label }) => {
   return (
@@ -114,7 +115,8 @@ export const About = () => {
         >
     <img
   className="w-full max-w-4xl h-auto m-auto rounded-xl shadow-lg"
-  src="https://paf-iast.edu.pk/wp-content/uploads/2025/07/WhatsApp-Image-2025-07-21-at-9.46.09-AM-1-scaled-600x333.jpeg"
+  //src="https://paf-iast.edu.pk/wp-content/uploads/2025/07/WhatsApp-Image-2025-07-21-at-9.46.09-AM-1-scaled-600x333.jpeg"
+  src={heroImg}
   alt="PAF-IAST Campus"
 />
 
