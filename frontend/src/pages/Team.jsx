@@ -3,9 +3,9 @@ import Footer from '../sections/Footer';
 import teamBanner from '../assets/team-banner.jpg'; // Optional background image
 import ayeshaImg from '../assets/members-images/Ayesha.jpg'
 import abdullahImg from '../assets/members-images/abudllahImg.jpg'
+import farheenImg from '../assets/members-images/farheen_jadoon.jpg'
+import harbazKhanImg from '../assets/members-images/harbaz_khan.jpg'
 import { motion } from 'framer-motion';
-
-
 import './teams.css'
 // 🔹 Mock data for different roles/teams
 const presidentTeam = [
@@ -15,12 +15,7 @@ const presidentTeam = [
     image: ayeshaImg,
     linkedin: '',
   },
-  {
-    name: '',
-    role: 'Vice President',
-    image: '',
-    linkedin: '',
-  },
+  
 ];
 
 const itTeam = [
@@ -30,31 +25,28 @@ const itTeam = [
     image: abdullahImg,
     linkedin: '',
   },
-  {
-    name: '',
-    role: 'Web Developer',
-    image: '',
-    linkedin: '',
-  },
+  
 ];
 
-const mediaTeam = [
+const securityTeam = [
   {
-    name: '',
-    role: 'Media Coordinator',
-    image: '',
+    name: 'Harbaz Kahn',
+    role: 'Securify Officier',
+    image: harbazKhanImg,
     linkedin: '',
   },
 ];
 
 const prTeam = [
   {
-    name: '',
+    name: 'Farheen Jadoon',
     role: 'PR Manager',
-    image: '',
+    image: farheenImg,
     linkedin: '',
   },
 ];
+
+
 
 // const TeamSection = ({ title, members }) => (
 //   <section className="mt-16 px-6 ml-40 mb-10">
@@ -253,7 +245,7 @@ const prTeam = [
       {/* Team Sections */}
       <TeamSection title="President & Vice President" members={presidentTeam} />
       <TeamSection title="IT Team" members={itTeam} />
-      <TeamSection title="Media Team" members={mediaTeam} />
+      <TeamSection title="Security Team" members={securityTeam} />
       <TeamSection title="PR Team" members={prTeam} />
 
       <Footer />
