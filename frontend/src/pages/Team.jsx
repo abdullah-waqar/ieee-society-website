@@ -7,6 +7,7 @@ import farheenImg from '../assets/members-images/farheen_jadoon.jpg'
 import harbazKhanImg from '../assets/members-images/harbaz_khan.jpg'
 import hijabImg from '../assets/members-images/hijab_fatima.jpg'
 import { motion } from 'framer-motion';
+import ahmedGhani from '../assets/members-images/ahmad_ghani.jpeg'
 import './teams.css'
 // 🔹 Mock data for different roles/teams
 const presidentTeam = [
@@ -50,12 +51,21 @@ const prTeam = [
 const treseuareTeam = [
   {
     name: "Hijab Fatima",
-    role: "",
+    role: "Tresurer manager",
     image: hijabImg,
     linkedin: ''
   }
 ]
 
+const industrialOfficier = [
+  {
+    name: "Ahmed Ghani",
+    role: "Industrial Manager",
+    image: ahmedGhani,
+    linkedin: ''
+
+  }
+]
 
 
 // const TeamSection = ({ title, members }) => (
@@ -258,6 +268,7 @@ const treseuareTeam = [
       <TeamSection title="Security Team" members={securityTeam} />
       <TeamSection title="PR Team" members={prTeam} />
       <TeamSection title="Treasure Team" members={treseuareTeam} />
+      <TeamSection title="Industrial Team" members={industrialOfficier} />
 
       <Footer />
     </div>

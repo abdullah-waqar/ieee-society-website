@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
 
 const events = [
-  { title: "How to do Research", date: "Aug 15", description: "4-hour session for innovation." },
-  { title: "AI Workshop", date: "Sept 1", description: "Hands-on session on Machine Learning." },
-  { title: "How to do Research", date: "Aug 15", description: "4-hour session for innovation." },
-  { title: "AI Workshop", date: "Sept 1", description: "Hands-on session on Machine Learning." },
+  // { title: "How to do Research", date: "Aug 15", description: "4-hour session for innovation." },
+  // { title: "AI Workshop", date: "Sept 1", description: "Hands-on session on Machine Learning." },
+  // { title: "How to do Research", date: "Aug 15", description: "4-hour session for innovation." },
+  // { title: "AI Workshop", date: "Sept 1", description: "Hands-on session on Machine Learning." },
 ];
 
 export default function EventsSection({ isHeading = true }) {
@@ -24,7 +24,7 @@ export default function EventsSection({ isHeading = true }) {
       )}
 
       <div className="grid gap-6 md:grid-cols-2 max-w-5xl mx-auto">
-        {events.map((event, idx) => (
+        {events.length > 0 ? events.map((event, idx) => (
           <motion.div
             key={idx}
             className="bg-white rounded-lg shadow p-6 hover:shadow-md transition cursor-pointer"
@@ -35,7 +35,7 @@ export default function EventsSection({ isHeading = true }) {
             <p className="text-sm text-gray-500 mb-2">{event.date}</p>
             <p className="text-gray-700">{event.description}</p>
           </motion.div>
-        ))}
+        )): <div className='flex justify-center items-center  w-[60vw] font-extrabold text-4xl'> <h1>No Events yet, Keep checking</h1> </div>}
       </div>
     </section>
   );
