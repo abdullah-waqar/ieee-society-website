@@ -5,6 +5,7 @@ import ayeshaImg from '../assets/members-images/Ayesha.jpg'
 import abdullahImg from '../assets/members-images/abudllahImg.jpg'
 import farheenImg from '../assets/members-images/farheen_jadoon.jpg'
 import harbazKhanImg from '../assets/members-images/harbaz_khan.jpg'
+import hijabImg from '../assets/members-images/hijab_fatima.jpg'
 import { motion } from 'framer-motion';
 import './teams.css'
 // 🔹 Mock data for different roles/teams
@@ -45,6 +46,15 @@ const prTeam = [
     linkedin: '',
   },
 ];
+
+const treseuareTeam = [
+  {
+    name: "Hijab Fatima",
+    role: "",
+    image: hijabImg,
+    linkedin: ''
+  }
+]
 
 
 
@@ -247,6 +257,7 @@ const prTeam = [
       <TeamSection title="IT Team" members={itTeam} />
       <TeamSection title="Security Team" members={securityTeam} />
       <TeamSection title="PR Team" members={prTeam} />
+      <TeamSection title="Treasure Team" members={treseuareTeam} />
 
       <Footer />
     </div>
@@ -254,3 +265,5 @@ const prTeam = [
   };
 
   export default Team;
+
+  
