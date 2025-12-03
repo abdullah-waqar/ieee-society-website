@@ -1,12 +1,17 @@
 import { motion } from 'framer-motion';
-
+import about_1 from '../assets/About/about_1.jpeg'
+import about_2 from '../assets/About/about_2.jpeg'
+import about_3 from '../assets/About/about_3.jpeg'
+import about_4 from '../assets/About/about_4.jpeg'
+import about_5 from '../assets/About/about_5.jpeg'
 export default function AboutSection() {
   const images = [
-    "https://images.unsplash.com/photo-1742505709415-76b15647ae64?w=600&auto=format&fit=crop&q=60",
-    "https://images.unsplash.com/photo-1749497683197-ae96f3cb92f4?w=600&auto=format&fit=crop&q=60",
-    "https://images.unsplash.com/photo-1749738505157-2d8142c1545f?w=600&auto=format&fit=crop&q=60",
-    "https://images.unsplash.com/photo-1749740436817-60414cc23115?w=600&auto=format&fit=crop&q=60",
-    "https://images.unsplash.com/photo-1749427861553-9375109ee983?w=600&auto=format&fit=crop&q=60",
+    // "https://images.unsplash.com/photo-1742505709415-76b15647ae64?w=600&auto=format&fit=crop&q=60",
+    // "https://images.unsplash.com/photo-1749497683197-ae96f3cb92f4?w=600&auto=format&fit=crop&q=60",
+    // "https://images.unsplash.com/photo-1749738505157-2d8142c1545f?w=600&auto=format&fit=crop&q=60",
+    // "https://images.unsplash.com/photo-1749740436817-60414cc23115?w=600&auto=format&fit=crop&q=60",
+    // "https://images.unsplash.com/photo-1749427861553-9375109ee983?w=600&auto=format&fit=crop&q=60",
+    about_1,about_2,about_3,about_4,about_5
   ];
 
   const animationProps = {
