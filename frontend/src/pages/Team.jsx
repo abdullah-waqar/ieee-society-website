@@ -70,7 +70,7 @@ const directorSecuity = [
 const mediaTeam = [
   {
     name: "Mobeen Sarwar",
-    role: "Member Media & Design",
+    role: "Director of Graphic Design",
     image: mobeen,
     linkedin: ''
 
