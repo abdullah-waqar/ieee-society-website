@@ -25,7 +25,7 @@ const Event = () => {
           Join us at our latest events where technology, learning, and networking come together.
         </p>
         {/* Here you can map event cards */}
-        <EventsSection isHeading={false} />
+        
       </section>
 
       {/* Past Events Section */}
@@ -34,6 +34,7 @@ const Event = () => {
         <p className="text-gray-600 max-w-xl mx-auto mb-10">
           A look back at the workshops, hackathons, and webinars we've hosted.
         </p>
+        <EventsSection isHeading={false} />
         <GallerySection isHeading={false} />
       </section>
       <Footer />

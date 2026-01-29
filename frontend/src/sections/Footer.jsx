@@ -34,7 +34,7 @@ export default function Footer() {
 
         <div className='flex mt-4 space-x-10 text-2xl '>
 
-        <FaLinkedinIn className='cursor-pointer' />
+        <a href="https://www.linkedin.com/in/ieee-student-branch-pafiast-91384a33b/"><FaLinkedinIn className='cursor-pointer' /></a>
         <FaInstagram className='cursor-pointer' />
         </div>
 
@@ -51,7 +51,7 @@ export default function Footer() {
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
               <i className="fab fa-instagram"></i>
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+            <a href="https://www.linkedin.com/in/ieee-student-branch-pafiast-91384a33b/" target="_blank" rel="noopener noreferrer" className="hover:text-white">
               <i className="fab fa-linkedin"></i>
             </a>
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
