@@ -2,7 +2,7 @@
 
 import { FaLinkedinIn } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
-
+import { Link, NavLink } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -21,10 +21,10 @@ export default function Footer() {
         <div>
           <h3 className="text-xl font-bold mb-4 text-white">Quick Links</h3>
           <ul className="space-y-2 text-sm">
-            <li><a href="#about" className="hover:text-white transition">HOME</a></li>
-            <li><a href="#events" className="hover:text-white transition">ABOUT</a></li>
-            <li><a href="#teams" className="hover:text-white transition">EVENTS</a></li>
-            <li><a href="#gallery" className="hover:text-white transition">TEAM</a></li>
+            <li><NavLink to={"/"} className="hover:text-white transition">HOME</NavLink></li>
+            <li><NavLink to={"/about"} className="hover:text-white transition">ABOUT</NavLink></li>
+            <li><NavLink to={"/event"} className="hover:text-white transition">EVENTS</NavLink></li>
+            <li><NavLink to={"/team"} className="hover:text-white transition">TEAM</NavLink></li>
 
           </ul>
         </div>
@@ -48,7 +48,7 @@ export default function Footer() {
             <li>Location: Haripur, KPK, Pakistan</li>
           </ul>
           <div className="flex space-x-4 mt-4">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+            <a href="https://www.instagram.com/ieee.pafiast/" target="_blank" rel="noopener noreferrer" className="hover:text-white">
               <i className="fab fa-instagram"></i>
             </a>
             <a href="https://www.linkedin.com/in/ieee-student-branch-pafiast-91384a33b/" target="_blank" rel="noopener noreferrer" className="hover:text-white">
