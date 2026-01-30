@@ -37,7 +37,7 @@ export default function EventsSection({ isHeading = true }) {
             <p className="text-gray-700">{event.description}</p>
             <p className='bg-gray-400 text-white cursor-default w-[5rem] p-1.5 text-center text-black rounded-2xl'> <a >Passed</a></p>
           </motion.div>
-        )): <div className='flex justify-center items-center  w-[60vw] font-extrabold text-4xl'> <h1></h1> </div>}
+        )): <div className='col-span-full flex justify-center items-center  lg:text-xl text-xs'> <h1 className='text-gray-700'>Keep visting website for latest events</h1> </div>}
       </div>
     </section>
   );

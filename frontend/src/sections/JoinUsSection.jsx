@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export default function JoinUsSection() {
   return (
-    <section className="py-16 px-4 sm:px-10 lg:ml-40 lg:mr-40 text-center">
+    <section className="py-0 px-4 sm:px-10 lg:ml-40 lg:mr-40 text-center">
       <h2 className="text-3xl font-bold text-black mb-8">Why Join IEEE?</h2>
       
       <div className="flex flex-col gap-12">
